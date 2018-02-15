@@ -1,0 +1,31 @@
+<tool id="ChIPseeker_test" name="ChIPseeker_test" version="0.1.0">
+    <description>ChIPseeker test tool</description>
+    <requirements>
+        <requirement type="package" version="1.14.0">bioconductor-chipseeker</requirement>
+        <requirement type="package" version="3.4.0">bioconductor-txdb.hsapiens.ucsc.hg38.knowngene</requirement>
+        <requirement type="package" version="3.5.0">bioconductor-org.hs.eg.db</requirement>
+    </requirements>
+    <command detect_errors="exit_code"><![CDATA[
+        Rscript ${__tool_directory__}/ChIPseeker_test.R "$input1" "$output1" "$output2"
+    ]]></command>
+    <inputs>
+        <param type="data" name="input1" format="bed" />
+    </inputs>
+    <outputs>
+        <data name="output1" format="txt" />
+        <data name="output2" format="pdf" />
+    </outputs>
+    <tests>
+        <test>
+            <param name="input1" value="ex.bed"/>
+            <output name="output1" file="o1.txt"/>
+            <output name="output2" file="o2.pdf"/>
+        </test>
+    </tests>
+    <help><![CDATA[
+        ChIPseeker test tool
+    ]]></help>
+    <citations>
+        <citation type="doi">10.18129/B9.bioc.ChIPseeker</citation>
+    </citations>
+</tool>

@@ -1,0 +1,6 @@
+categories: [ChIP-seq]
+description: ChIPseeker_test
+homepage_url: ''
+name: chipseeker_test1
+owner: kpbioteam
+remote_repository_url: https://github.com/kpbioteam/tools
