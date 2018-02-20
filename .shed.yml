@@ -1,6 +1,7 @@
-categories: [ChIP-seq]
-description: ChIPseeker_test
-homepage_url: ''
-name: chipseeker_test1
+categories: [Epigenetics]
+description: Tool returns requested annotation as a data frame, with each row corresponding
+  to a methylation loci
+homepage_url: https://github.com/kpbioteam/minfi_getanno
+name: minfi_getanno
 owner: kpbioteam
-remote_repository_url: https://github.com/kpbioteam/tools
+remote_repository_url: https://github.com/kpbioteam/minfi_getanno
